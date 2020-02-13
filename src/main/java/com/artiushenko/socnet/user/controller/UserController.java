@@ -22,7 +22,6 @@ public class UserController {
 
     @GetMapping
     public List getUsers(){
-        List<User> users = userServise.getUsers();
         return userServise.getUsers();
     }
 }
