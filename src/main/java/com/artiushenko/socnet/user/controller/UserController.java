@@ -3,14 +3,12 @@ package com.artiushenko.socnet.user.controller;
 import com.artiushenko.socnet.user.entity.User;
 import com.artiushenko.socnet.user.servise.UserServise;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
@@ -24,6 +22,7 @@ public class UserController {
 
     @GetMapping
     public List getUsers(){
+        List<User> users = userServise.getUsers();
         return userServise.getUsers();
     }
 }

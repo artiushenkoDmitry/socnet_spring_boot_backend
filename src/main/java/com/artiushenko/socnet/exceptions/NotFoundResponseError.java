@@ -1,8 +1,6 @@
-package com.artiushenko.socnet.Exceptions;
+package com.artiushenko.socnet.exceptions;
 
 import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class NotFoundResponseError extends Error{
     public  NotFoundResponseError(String className, UUID id) {

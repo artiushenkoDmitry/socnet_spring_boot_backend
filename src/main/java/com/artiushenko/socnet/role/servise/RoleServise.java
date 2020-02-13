@@ -1,9 +1,8 @@
 package com.artiushenko.socnet.role.servise;
 
-import com.artiushenko.socnet.Exceptions.NotFoundResponseError;
+import com.artiushenko.socnet.exceptions.NotFoundResponseError;
 import com.artiushenko.socnet.role.entity.Role;
 import com.artiushenko.socnet.role.repository.RoleRepository;
-import com.artiushenko.socnet.user.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

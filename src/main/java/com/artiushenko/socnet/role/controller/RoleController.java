@@ -3,14 +3,12 @@ package com.artiushenko.socnet.role.controller;
 import com.artiushenko.socnet.role.entity.Role;
 import com.artiushenko.socnet.role.servise.RoleServise;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/role")
 @RequiredArgsConstructor
