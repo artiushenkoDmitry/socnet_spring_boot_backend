@@ -15,7 +15,7 @@ import java.util.UUID;
 public class RoleController {
     private final RoleServise roleServise;
 
-    @GetMapping("/id")
+    @GetMapping("/{id}")
     public Role getRole(@PathVariable("id")UUID id){
         return roleServise.getRole(id);
     }

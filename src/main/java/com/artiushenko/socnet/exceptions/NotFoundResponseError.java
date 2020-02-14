@@ -4,6 +4,6 @@ import java.util.UUID;
 
 public class NotFoundResponseError extends Error{
     public  NotFoundResponseError(String className, UUID id) {
-        super(String.format("Can't find %s with id %s", className, id.toString()));
+        super(String.format("Can't find %s with id %s", className.replaceAll(".+\\.",""), id.toString()));
     }
 }
